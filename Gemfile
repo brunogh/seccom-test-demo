@@ -17,6 +17,15 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'socialcount'
+
+group :production, :staging do
+  gem 'pg'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
